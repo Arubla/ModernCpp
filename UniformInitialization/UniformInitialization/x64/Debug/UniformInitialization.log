@@ -1,0 +1,4 @@
+﻿  Main.cpp
+C:\Users\arunb\workspace\ModernCpp\ModernCpp\UniformInitialization\UniformInitialization\Main.cpp(15,7): warning C4101: 'd1': unreferenced local variable
+C:\Users\arunb\workspace\ModernCpp\ModernCpp\UniformInitialization\UniformInitialization\Main.cpp(6,6): warning C4101: 'a1': unreferenced local variable
+  UniformInitialization.vcxproj -> C:\Users\arunb\workspace\ModernCpp\ModernCpp\UniformInitialization\x64\Debug\UniformInitialization.exe
