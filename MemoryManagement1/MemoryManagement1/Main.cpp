@@ -23,4 +23,19 @@ int main() {
 	//if the memory is not freed, it is called a memory leak
 	p = NULL;
 
+	//dynamic memory reallocation methods
+//new - allocates
+// delete - releases
+//<type> *<variable> = new <type>(optional args);
+//delete <variable>
+
+
+
+}
+//new is superior lol
+void New(){
+	int* p = new int(5);
+	*p = 6;
+	delete p;
+	p = nullptr;
 }
