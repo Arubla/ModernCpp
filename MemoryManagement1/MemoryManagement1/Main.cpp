@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h> //this is where memory allocation functions are declared
+#include <cstring>
+#include <stdlib.h>//this is where memory allocation functions are declared
 //malloc - allocates memory
 //calloc - allocates memory and initializes
 //realloc - allocates additional memory
@@ -38,4 +39,17 @@ void New(){
 	*p = 6;
 	delete p;
 	p = nullptr;
+}
+
+void NewArr() {
+	int* p = new int[5] {1, 2, 3, 4, 5};
+	//sometimes use a for loop to populate new array if you don't have the values at initialization
+	delete []p;
+	p = nullptr;
+}
+
+void Strings() {
+	char* p = new char[4];
+	strcpy(p, "C++"); //1 extra byte for null terminating
+	delete[p];
 }
