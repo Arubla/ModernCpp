@@ -45,7 +45,7 @@ void Car::AddPassengers(int count)
 	passengers = count;
 }
 
-void Car::Dashboard()
+void Car::Dashboard()const //any functions that do not modify variables should have const
 {
 	//std::cout all the variables
 }
