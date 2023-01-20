@@ -18,5 +18,6 @@ public:
 	void Brake();
 	void AddPassengers(int count);
 	void Dashboard();
+	static void ShowCount(); //static member functions can only access other static things
 
 };

@@ -49,3 +49,8 @@ void Car::Dashboard()
 {
 	//std::cout all the variables
 }
+
+void Car::ShowCount()
+{
+	std::cout << "Total cars: " << totalCount << std::endl;
+}
