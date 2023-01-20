@@ -3,6 +3,7 @@
 class Car {
 	//member variables - set to private by default
 private:
+	static int totalCount;
 	float fuel;
 	float speed;
 	int passengers;

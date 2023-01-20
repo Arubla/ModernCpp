@@ -1,8 +1,9 @@
 #include "Car.h"
 #include <iostream>
-
+int Car::totalCount = 0;
 Car::Car()
 {
+	totalCount++;
 	fuel = 0;
 	speed = 0;
 	passengers = 0;
@@ -11,6 +12,7 @@ Car::Car()
 
 Car::Car(float startingFuel)
 {
+	totalCount++;
 	fuel = startingFuel;
 	speed = 0;
 	passengers = 0;
@@ -18,6 +20,7 @@ Car::Car(float startingFuel)
 
 Car::~Car()
 {
+	totalCount--;
 	std::cout << "Car was destroyed";
 }
 
