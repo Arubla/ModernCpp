@@ -24,3 +24,13 @@ Product::Product(std::string newName, float newPrice)
 	std::cout << "Name: " << name << " Price: " << *price << std::endl;
 
 }
+
+float Product::getPrice()const
+{
+	return *price;
+}
+
+void Product::setPrice(float newPrice)
+{
+	*price = newPrice;
+}
