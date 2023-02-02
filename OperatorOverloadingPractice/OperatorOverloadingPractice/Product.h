@@ -14,6 +14,9 @@ public:
 	Product(std::string name, float price);
 	//copy constructor
 	Product(const Product& product);
+	//move constructor
+	Product(Product&& product);
+
 	std::string getName()const;
 	float getPrice()const;
 	void setPrice(float newPrice);

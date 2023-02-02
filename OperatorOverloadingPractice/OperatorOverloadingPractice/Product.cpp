@@ -25,16 +25,26 @@ Product::Product(std::string newName, float newPrice)
 
 }
 
-float Product::getPrice()const
-{
-	return *price;
-}
-
 Product::Product(const Product& product)
 {
 	std::cout << "Product Object Copied: " << &product << std::endl;
 	name.assign(product.name);
 	price = new float(*product.price);
+}
+
+Product::Product(Product&& product)
+{
+	std::cout << "A product has moved address" << std::endl;
+	name.assign(product.name);
+	price = product.price;
+	name.assign(nullptr);
+	product.price = nullptr;
+
+}
+
+float Product::getPrice()const
+{
+	return *price;
 }
 
 void Product::setPrice(float newPrice)
@@ -46,3 +56,5 @@ std::string Product::getName() const
 {
 	return name;
 }
+
+
