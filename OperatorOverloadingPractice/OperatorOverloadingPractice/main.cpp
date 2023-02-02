@@ -12,6 +12,15 @@ int main() {
 
 	Product thirdCopy = Product(third);
 	Product secondCopy = second;
-	Product secondMoved = std::move(second);
+	/*Product secondMoved = std::move(second);*/
+
+	Product fourth = Product("Bacon", 8.0);
+	/*if (fourth == third) {
+		std::cout << "fourth and secondMoved products are the same!" << std::endl;
+	}
+	else {
+		std::cout << "Not the same";
+	}*/
+
 	return 0;
 }

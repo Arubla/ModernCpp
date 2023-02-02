@@ -32,14 +32,19 @@ Product::Product(const Product& product)
 	price = new float(*product.price);
 }
 
-Product::Product(Product&& product)
-{
-	std::cout << "A product has moved address" << std::endl;
-	name.assign(product.name);
-	price = product.price;
-	name.assign(nullptr);
-	product.price = nullptr;
+//Product::Product(Product&& product)
+//{
+//	std::cout << "A product has moved address" << std::endl;
+//	name.assign(product.name);
+//	price = product.price;
+//	name.assign(nullptr);
+//	product.price = nullptr;
+//
+//}
 
+bool Product::operator==(const Product & product) const
+{
+	return /*name.compare(product.name) == 0*/ *price == *product.price;
 }
 
 float Product::getPrice()const

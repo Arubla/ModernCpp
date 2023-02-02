@@ -21,5 +21,8 @@ public:
 	float getPrice()const;
 	void setPrice(float newPrice);
 	
+	bool operator ==(const Product& product)const;
+
+
 
 };
