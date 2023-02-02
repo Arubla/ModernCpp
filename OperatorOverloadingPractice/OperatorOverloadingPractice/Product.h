@@ -12,7 +12,9 @@ public:
 	Product();
 	//parameterized constructor
 	Product(std::string name, float price);
-
+	//copy constructor
+	Product(const Product& product);
+	std::string getName()const;
 	float getPrice()const;
 	void setPrice(float newPrice);
 	

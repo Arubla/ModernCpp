@@ -30,7 +30,19 @@ float Product::getPrice()const
 	return *price;
 }
 
+Product::Product(const Product& product)
+{
+	std::cout << "Product Object Copied: " << &product << std::endl;
+	name.assign(product.name);
+	price = new float(*product.price);
+}
+
 void Product::setPrice(float newPrice)
 {
 	*price = newPrice;
+}
+
+std::string Product::getName() const
+{
+	return name;
 }
