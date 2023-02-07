@@ -12,7 +12,7 @@ int main() {
 
 	Product thirdCopy = Product(third);
 	Product secondCopy = second;
-	/*Product secondMoved = std::move(second);*/
+	auto secondMoved(std::move(second));
 
 	Product fourth = Product("Bacon", 8.0);
 	/*if (fourth == third) {
